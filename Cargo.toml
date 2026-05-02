@@ -1,0 +1,30 @@
+[package]
+name = "sprite_anim"
+version = "1.0.0"
+edition = "2024"
+authors = ["MoriokaReimen <menschenjager.mark.neun@gmail.com>"]
+description = "egui widget for gif animation and sprite image"
+license = "Apache-2.0"
+repository = "https://github.com/MoriokaReimen/egui_sprite_anim"
+readme = "README.md"
+keywords = ["rust", "egui", "sprite", "gif"]
+categories = ["gui"]
+
+[features]
+default = ["gif_player", "sprite", "sprite_animation"]
+gif_player = []
+sprite = []
+sprite_animation = []
+
+[dependencies]
+egui = "^0.33"
+image = "^0.25"
+md5 = "^0.8"
+thiserror = "^2.0"
+
+[dev-dependencies]
+eframe = "^0.33"
+
+[package.metadata.docs.rs]
+all-features = true
+
